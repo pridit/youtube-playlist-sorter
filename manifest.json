@@ -4,7 +4,7 @@
   "homepage_url": "https://github.com/pridit/youtube-playlist-sorter",
   "manifest_version": 2,
   "name": "YouTube Playlist Sorter (A-Z)",
-  "version": "1.0",
+  "version": "1.1",
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
@@ -12,6 +12,7 @@
     }
   ],
   "icons": {
-    "48": "icons/sort-48.png"
+    "48": "icons/sort-48.png",
+    "96": "icons/sort-96.png"
   }
 }
