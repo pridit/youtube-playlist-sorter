@@ -1,18 +1,40 @@
 {
-  "author": "Jordan Heale",
+  "manifest_version": 3,
+  "name": "YouTube Playlist Sorter (A-Z)",
+  "version": "1.3",
+
   "description": "YouTube playlists in the sidebar and playlist selection modal are automatically sorted in alphabetical order.",
   "homepage_url": "https://github.com/pridit/youtube-playlist-sorter",
-  "manifest_version": 2,
-  "name": "YouTube Playlist Sorter (A-Z)",
-  "version": "1.2",
+  "author": "Jordan Heale",
+
+  "options_ui": {
+    "page": "options/options.html"
+  },
+
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
       "js": ["sort.js"]
     }
   ],
+
   "icons": {
     "48": "icons/sort-48.png",
     "96": "icons/sort-96.png"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{694d46d3-71fa-47bb-a97f-76a5836e5337}",
+      "strict_min_version": "42.0"
+    }
   }
 }

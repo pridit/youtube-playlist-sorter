@@ -1,0 +1,81 @@
+/**
+ * Sections
+ */
+
+body {
+    padding-bottom: 15px;
+    font-size: .75em;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.sub-section {
+    margin-top: 20px;
+}
+
+/**
+ * Form
+ */
+
+form {
+    margin: 10px 0 10px 0;
+}
+
+label {
+    display: inline-block;
+    user-select: none;
+}
+
+form label:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+/**
+ * Typography
+ */
+
+strong {
+    display: block;
+    margin-top: 20px;
+}
+
+h2 {
+    display: inline;
+}
+
+/**
+ * Images
+ */
+
+ svg {
+    margin-left: 4px;
+    display: inline;
+    width: 1.5em;
+    vertical-align: -.125em;
+}
+
+/**
+ * Media Queries
+ */
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: #ffffff;
+        color: #444;
+    }
+
+    svg {
+        fill: #000;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #23222b;
+        color: #ccc;
+    }
+
+    svg {
+        fill: #fff;
+    }
+}

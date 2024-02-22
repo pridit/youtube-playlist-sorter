@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "youtube-playlist-sorter",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "fix": "eslint . --fix",
+    "test": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0"
+  }
+}
