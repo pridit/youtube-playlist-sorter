@@ -1,7 +1,7 @@
-(function() {
-  'use strict';
+(function () {
+  "use strict";
 
-  const checkboxes = document.getElementsByClassName('option');
+  const checkboxes = document.getElementsByClassName("option");
   const options = {};
 
   let element;
@@ -11,7 +11,7 @@
 
     options[element.dataset.option] = element;
 
-    element.addEventListener('change', function(e) {
+    element.addEventListener("change", function (e) {
       if (!e.isTrusted) return;
 
       const store = {};
@@ -38,4 +38,4 @@
       }
     }
   });
-}());
+})();
